@@ -1,10 +1,10 @@
-const CACHE_NAME = "fjp-tarifas-pro-v2";
+const CACHE_NAME = "tarifas-pro-v3";
 
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
   "./manifest.json",
-  "./icon-fjp.svg"
+  "./icon-ama.svg"
 ];
 
 self.addEventListener("install", event => {
