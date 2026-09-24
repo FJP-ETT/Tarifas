@@ -1,7 +1,7 @@
 {
-  "name": "FJP ETT - Tarifas PRO",
-  "short_name": "FJP Tarifas",
-  "description": "Calculadora de tarifas PRO de FJP ETT",
+  "name": "Calculadora de Tarifas PRO",
+  "short_name": "Tarifas PRO",
+  "description": "Calculadora de tarifas PRO",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
