@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FJP ETT - Tarifas PRO v2.0</title>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0b6b3a">
+<link rel="icon" href="icon-fjp.svg" type="image/svg+xml">
 <style>
 body{font-family:Arial,sans-serif;background:#ececec;margin:0;padding:20px}
 .container{max-width:1100px;margin:auto}
@@ -97,6 +100,19 @@ const d=encodeURIComponent(document.getElementById('destino').value);
 window.open('https://www.google.com/maps/dir/'+o+'/'+d,'_blank');
 }
 calcular();
+</script>
+  <script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js")
+            .then(() => {
+                console.log("FJP ETT Tarifas PRO instalada correctamente");
+            })
+            .catch(error => {
+                console.error("Error al registrar la PWA:", error);
+            });
+    });
+}
 </script>
 </body>
 </html>
